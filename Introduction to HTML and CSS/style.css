@@ -1,0 +1,39 @@
+    /* Type Selector */
+
+    h1 {
+        color: red;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p {
+        text-decoration: underline;
+    }
+
+
+    /* Class Selector */
+
+    .warning{
+        color: red;
+    }
+
+    /* ID Selector */
+
+    #element {
+        border: 2px solid red;
+    }
+
+    /* CSS Combinator - Descendant */
+
+    article p {
+        text-align: justify;
+    }
+
+    article header h3 {
+        color: orange
+    }
+
+    /* CSS Combinator - Direct Descendant / Child  */
+
+    ul > li {
+        color: blue;
+    }
