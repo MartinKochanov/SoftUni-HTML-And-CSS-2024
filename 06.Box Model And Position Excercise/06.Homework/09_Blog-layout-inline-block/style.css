@@ -1,0 +1,26 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 3em;
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+}
+
+article, aside {
+    display: inline-block; 
+}
+
+article section img {
+    max-width: 50%;
+    height: auto;
+}
+
+article {
+    max-width: 90ch;
+}
+
+aside {
+    margin-left: 4em;
+    position: absolute;
+    top: 3.125em;
+}
+
