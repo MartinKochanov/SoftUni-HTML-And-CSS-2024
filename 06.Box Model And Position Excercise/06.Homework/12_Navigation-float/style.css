@@ -1,16 +1,25 @@
-
-
 html {
-        padding: 4em;
-        font: 1em/1.2 Georgia, serif;
+    padding: 4em;
+    font: 1em/1.2 Georgia, serif;
 }
 
-h1, h2, h3 blockquote {
+body {
     font: inherit;
-} 
+    margin: 3em 10em;
+    
+}
+
+img {
+    padding: 0.5em;
+    border: 0.3em solid black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 1em 0.5em rgb(0, 0, 0, 0.25);
+
+}
 
 
- body > header {
+
+body>header {
     border-bottom: 2px solid #000;
     padding-bottom: 1em;
     margin-bottom: 3em;
@@ -23,7 +32,8 @@ header p a {
     font-weight: bold;
 }
 
-header p, header nav {
+header p,
+header nav {
     display: inline-block;
 }
 
@@ -44,9 +54,12 @@ nav ul li {
 
 
 
-nav a {
+a {
     color: rgb(0, 102, 0);
     text-decoration: none;
+}
+
+nav a {
     padding: 0.5em 1em;
 }
 
@@ -55,3 +68,56 @@ nav a:hover {
     color: #fff;
 }
 
+article:nth-child(1) img {
+    float: right;
+    margin: 1em;
+}
+
+section,
+aside {
+    display: inline-block;
+}
+
+section {
+    max-width: 50%;
+}
+
+aside {
+    position: relative;
+    bottom: 91em;
+    left: 65em;
+    max-width: 30em;
+}
+
+aside section:nth-child(1) {
+    display: block;
+    margin-bottom: 3em;
+}
+
+main section p:nth-child(3),
+blockquote {
+    display: inline-block;
+    max-width: 19em;
+}
+
+main section p:nth-child(3) {
+    border-right: 0.2em solid #ccc;
+    padding-right: 2em;
+}
+
+blockquote {
+    float: right;
+    color: #666a6c;
+    ;
+    font-style: italic;
+}
+
+blockquote p {
+    float: right;
+}
+
+article:nth-child(3) img {
+    float: left;
+    margin-right: 1em;
+    ;
+}
