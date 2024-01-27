@@ -1,5 +1,4 @@
-html {
-    padding: 4em;
+html {   
     font: 1em/1.2 Georgia, serif;
 }
 
@@ -84,7 +83,7 @@ section {
 
 aside {
     position: relative;
-    bottom: 91em;
+    bottom: 86em;
     left: 65em;
     max-width: 30em;
 }
