@@ -1,10 +1,18 @@
+main, aside {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 html {   
     font: 1em/1.2 Georgia, serif;
 }
 
 body {
     font: inherit;
-    margin: 3em 10em;
+    margin: 2em auto;
+    width: 90em;
     
 }
 
@@ -72,21 +80,17 @@ article:nth-child(1) img {
     margin: 1em;
 }
 
-section,
+main,
 aside {
+    vertical-align: top;
+    width: 50%;
     display: inline-block;
 }
 
-section {
-    max-width: 50%;
+aside{
+    padding-left: 30em;
 }
 
-aside {
-    position: relative;
-    bottom: 86em;
-    left: 65em;
-    max-width: 30em;
-}
 
 aside section:nth-child(1) {
     display: block;
@@ -95,8 +99,11 @@ aside section:nth-child(1) {
 
 main section p:nth-child(3),
 blockquote {
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
     display: inline-block;
-    max-width: 19em;
+    width: 43%;
 }
 
 main section p:nth-child(3) {
@@ -107,7 +114,6 @@ main section p:nth-child(3) {
 blockquote {
     float: right;
     color: #666a6c;
-    ;
     font-style: italic;
 }
 
