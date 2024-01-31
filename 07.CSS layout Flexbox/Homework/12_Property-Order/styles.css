@@ -8,6 +8,7 @@
 
 #box1 {
   background-color: pink;
+  order: 1;
 }
 
 #box2 {
