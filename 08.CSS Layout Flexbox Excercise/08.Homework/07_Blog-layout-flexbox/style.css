@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    background: #eee;
+}
+
+p,
+ul {
+    padding-bottom: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60em;
+    margin: 0 auto;
+    gap: 5em;
+}
+
+img {
+    border: 0.4em solid black;
+    padding: 0.5em;
+}
+
+.float-right {
+    float: right;
+    margin-left: 1em;
+}
+
+.float-left {
+    float: left;
+    margin-right: 1em;
+}
+
+.site-header {
+    display: flex;
+    flex: 0 0 100%;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+}
+
+header p {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+.site-main {
+    flex: 1 0 60%;
+}
+
+.site-aside {
+    flex: 1 0 auto;
+}
+
+ul li {
+    list-style-position: inside;
+    padding: 0.2em;
+}
+
+ul a {
+    padding: 0.5em;
+    color: #090;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none outside;
+    padding: 0.5em;
+}
+
+nav a {
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #090;
+}
+
+blockquote .author {
+    text-align: right;
+}
+
+blockquote.float-right {
+    max-width: 50%;
+    font-style: italic;
+    opacity: 0.7;
+    border-left: 2px solid #ccc;
+    padding-left: 1em;
+}

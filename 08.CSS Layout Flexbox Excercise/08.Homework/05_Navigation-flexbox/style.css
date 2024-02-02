@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    padding: 2em 4em;
+    background-color: #eee;
+}
+.site-title {
+    font-size: 3em;
+    line-height: 1;
+    font-weight: bold;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    border-bottom: 2px solid #000;
+    justify-content: space-between;
+    flex: 0 0 100%;
+    padding-bottom: 2em;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none outside;
+    padding: 0.5em;
+}
+
+nav a {
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #090;
+}
+
+p, h1 {
+    margin: 1.5em auto;
+}
