@@ -1,0 +1,84 @@
+/* Form container */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Form input fields */
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Form textarea */
+  .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Form label */
+  .form-label {
+    font-weight: bold;
+  }
+  
+  /* Form submit button */
+  .form-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Form select dropdown */
+  .form-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    appearance: none;
+  }
+  
+  /* Form checkbox and radio buttons */
+  .form-checkbox,
+  .form-radio {
+    margin-bottom: 15px;
+  }
+  
+  /* Form checkbox label */
+  .form-checkbox-label,
+  .form-radio-label {
+    margin-left: 5px;
+  }
+  
+  /* Form error message */
+  .form-error {
+    color: #dc3545;
+    margin-top: 5px;
+  }
+  
+  /* Form success message */
+  .form-success {
+    color: #28a745;
+    margin-top: 5px;
+  }

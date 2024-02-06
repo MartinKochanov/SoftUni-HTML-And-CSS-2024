@@ -1,0 +1,25 @@
+.sing-up {
+    background-color: #6A367D;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em 0;
+}
+
+.sing-up input {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 0.2em;
+    padding: 0.4em 1.2em;
+}
+
+.sing-up form input[type=text] {
+    flex: 0 1 80%;
+}
+
+.form form {
+    display: flex;
+    gap: 1em;
+}

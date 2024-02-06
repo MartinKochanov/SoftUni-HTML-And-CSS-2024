@@ -1,0 +1,96 @@
+body {
+    background-color: #FEFEFE;
+}
+
+.page {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.page .container:not(header .container) {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+header {
+    flex: 0 0 100%;
+    margin-bottom: 8em;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+header p {
+    margin: 0;
+}
+
+header p:first-child {
+    font-size: 2em;
+    color: #800082;
+}
+
+header p:nth-child(2) {
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    font-size: 0.6em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+main::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 0.01em solid #C6C6C6;
+    box-shadow: 0 0.3em 0.8em 0.1em rgba(150, 150, 150, 1);
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    padding-bottom: 2.5em;
+}
+
+h2::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 5em;
+    border: 2px solid black;
+    border-radius: 0.3em;
+    text-align: center;
+    top: 2.5em;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+footer {
+    background-color: #FAFAFA;
+    flex: 0 0 100%;
+}
+
+header .container label {
+    display: none;
+}
+
+
+@media (min-width:760px) and (max-width:992px) {
+    .page .container:not(header .container) {
+        max-width: 50em;
+    }
+}
+
+@media (max-width:760px) {
+    .page .container:not(header .container) {
+        max-width: 30em;
+    }
+}

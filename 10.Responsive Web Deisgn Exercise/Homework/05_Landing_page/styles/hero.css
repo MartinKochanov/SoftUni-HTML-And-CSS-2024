@@ -1,0 +1,40 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .container {
+    display: flex;
+    gap: 10em;
+}
+
+.hero .container .section-header {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 55%;
+    gap: 1em;
+}
+
+.hero .container .media {
+    flex: 1 0 auto;
+}
+
+.hero .container  .section-header  a {
+    border: 2px solid #333333;
+    color: #333333;
+    border-radius: 0.3em;
+    padding: 0.3em 1.2em;
+}
+
+@media (min-width:760px) and (max-width:992px) {
+    
+    .hero .container {
+        gap: 5em;
+    }
+}
+
+@media (max-width:760px) {
+    .hero .container {
+        gap: 2em;
+    }
+}

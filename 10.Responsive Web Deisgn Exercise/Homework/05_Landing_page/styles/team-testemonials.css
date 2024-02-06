@@ -1,0 +1,51 @@
+.testemonials-container,
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+.testemonials-container .card,
+.team-container .card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+    align-items: center;
+    text-align: center;
+}
+
+.card .media {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 50%;
+    box-shadow: 0 0 2em 0.3em rgba(0, 0, 0, 0.3);
+    margin-bottom: 1em;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content h4 {
+    margin: 0;
+}
+
+@media (min-width:760px) and (max-width:992px) {
+
+    .testemonials-container .card,
+    .team-container .card {
+        flex: 0 0 47%;
+    }
+}
+
+@media (max-width:760px) {
+    .testemonials-container .card,
+    .team-container .card {
+        flex: 0 0 45%;
+    }
+}

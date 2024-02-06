@@ -1,0 +1,80 @@
+header nav {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+header nav ul li {
+    display: block;
+}
+
+ul li a {
+    color: #333333;
+    padding: 0.5em 1em;
+}
+
+
+
+
+@media (max-width:992px) {
+    header nav {
+        display: none;
+    }
+
+    header .container label {
+        display: block;
+    }
+
+    #nav-toggle:checked+.page header nav {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5em;
+        background-color: #68347B;
+    }
+
+    #nav-toggle:checked+.page header nav ul {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #nav-toggle:checked+.page header nav ul li {
+        display: block;
+        background-color: white;
+        border-radius: 0.3em;
+       padding: 0.5em 3em;
+    }
+
+    #nav-toggle:checked+.page header .container label span {
+        display: none;
+    }
+
+    #nav-toggle:checked+.page header .container label {
+        right: 2em;
+        top: 2.5em;
+        position: fixed;
+        z-index: 10000;
+        color: white;
+    }
+
+    #nav-toggle:checked+.page header .container label::before {
+        display: block;
+        content: 'Close';
+    }
+
+
+    header .container {
+        padding: 1em 2em;
+        justify-content: space-between;
+    }
+}
