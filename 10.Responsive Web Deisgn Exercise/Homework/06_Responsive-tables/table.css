@@ -1,0 +1,56 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+table td,
+table th,
+table {
+    border: 1px solid #ccc;
+}
+
+table th,
+table td {
+    padding: 0.5em 1em;
+}
+
+table thead th,
+table thead td {
+    background-color: #333;
+    color: #fff;
+}
+
+
+@media (max-width: 800px) {
+
+    table,
+    thead,
+    tbody,
+    tr,
+    td,
+    th {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        border: 1px solid #000;
+    } 
+
+    tbody td::before {
+        display: inline-block;
+        content: attr(data-title);
+        font-weight: bold;
+        padding-right: 1em;
+    }
+}
